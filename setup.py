@@ -1,11 +1,12 @@
+from ciphers import VERSION
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="ron_cipher_nairraghav",  # Replace with your own username
-    version="0.0.1",
+    name="ron_cipher",  # Replace with your own username
+    version=VERSION,
     author="Raghav Nair",
     author_email="nairraghav@hotmail.com",
     description="A cipher package meant for CLI use to encrypt/decrypt using various ciphers",
