@@ -2,7 +2,7 @@ from ciphers.caeser_cipher import CaeserCipher
 from ciphers.vigenere_cipher import VigenereCipher
 import argparse
 
-VERSION = "0.0.0"
+VERSION = "1.0.0"
 
 
 def caeser_cipher(args):  # pragma: no cover
