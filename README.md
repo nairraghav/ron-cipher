@@ -1,5 +1,6 @@
 # ron-cipher
 [![Build Status](https://travis-ci.org/nairraghav/ron-cipher.svg?branch=master)](https://travis-ci.org/nairraghav/ron-cipher)
+[![codecov.io](http://codecov.io/github/nairraghav/ron-cipher/coverage.svg?branch=master)](http://codecov.io/github/nairraghav/code-cov?branch=master)
 
 A CLI tool that implements the various ciphers
 
@@ -45,25 +46,25 @@ ron_cipher caeser -r 1 -i ">:.3 =~/2:. >?=7/5" -a decrypt
 #### Encryption
 ##### Default Secret
 ```bash
-ron_cipher caeser -i "some random string" -a encrypt
+ron_cipher vigenere -i "some random string" -a encrypt
 ```
 
 ##### Custom Secret
 The secret is a string which works by getting the indices of the characters within the secret and adding them to the 
 respective indices of the plaintext to find the encrypted value
 ```bash
-ron_cipher caeser -r 1 -i "some random string" -a encrypt
+ron_cipher vigenere -s "supersecret" -i "some random string" -a encrypt
 ```
 
 #### Decryption
 ##### Default Rotation
 ```bash
-ron_cipher caeser -i ",[<^ ,?@(g? ,{[#@0" -a decrypt
+ron_cipher vigenere -i ",[<^ ,?@(g? ,{[#@0" -a decrypt
 ```
 
 ##### Custom Rotation
 ```bash
-ron_cipher caeser -s "supersecret" -i ",i%+ ,&<6>{ m\\#," -a decrypt
+ron_cipher vigenere -s "supersecret" -i ",i%+ ,&<6>{ m\\#," -a decrypt
 ```
 
 ## Troubleshooting
