@@ -1,12 +1,12 @@
 APP_NAME=ciphers
 
 clean:
-	rm -rf .pytest_cache/ .coverage build/ dist/ ron_cipher*/
+	rm -rf .pytest_cache/ .coverage build/ dist/ ron_cipher*/ junit_test_report.xml
 
 test:
-	python -s -m pytest tests/ --cov=$(APP_NAME)/
+	python -s -m pytest tests/ --cov=$(APP_NAME)/ --cov-report term-missing --junitxml=junit_test_report.xml
 
-lint:
+flake:
 	flake8 $(APP_NAME)/ tests/
 
 format:

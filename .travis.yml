@@ -5,5 +5,5 @@ install:
   - pip install -r requirements.txt
 # run linting and tests
 script:
-  - make lint
+  - make flake
   - make test
