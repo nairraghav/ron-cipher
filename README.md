@@ -1,6 +1,6 @@
 # ron-cipher
 [![Build Status](https://travis-ci.org/nairraghav/ron-cipher.svg?branch=master)](https://travis-ci.org/nairraghav/ron-cipher)
-[![codecov.io](http://codecov.io/github/nairraghav/ron-cipher/coverage.svg?branch=master)](https://codecov.io/gh/nairraghav/ron-cipher)
+[![codecov.io](https://codecov.io/github/nairraghav/ron-cipher/coverage.svg?branch=master)](https://codecov.io/gh/nairraghav/ron-cipher)
 [![PyPI version](https://badge.fury.io/py/ron-cipher.svg)](https://badge.fury.io/py/ron-cipher)
 
 A CLI tool that implements various ciphers, including the ability to encrypt and decrypt
