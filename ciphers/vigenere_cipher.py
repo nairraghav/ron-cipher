@@ -12,7 +12,7 @@ class VigenereCipher:
             while secret_index < len(secret):
                 if secret[secret_index] not in self.default_character_map:
                     secret = (
-                        secret[0:secret_index] + secret[secret_index + 1 :]
+                        secret[0:secret_index] + secret[secret_index + 1:]
                     )
                 secret_index += 1
             self._secret = str(secret).lower()
