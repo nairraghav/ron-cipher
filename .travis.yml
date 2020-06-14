@@ -1,22 +1,22 @@
 language: python
 python:
-  - "3.7"
+- '3.7'
 install:
-  - pip install -r requirements.txt
-# run linting and tests
+- pip install -r requirements.txt
 script:
-  - make flake
-  - make test
-
+- make flake
+- make test
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: HGVUc3mwCcvyEFqozO7+q1sHk4YEnrFAPaR5CGsojUJlGA9nRAKn7Unfv1WD5DnQoInZinGOzbhrX2ViF781DIxtpeXqfMjddrsnpf/8b5/sP88jTU7LUDSIlem+LE9OkXpelYPSizcgPVBwhjcxqoHee69xsANg0OH0gjs99TjiT0cTR0sGk/zgqSkzAbkq28/GuB9ykFkKtZDcwwAjhF+QoetMUVYKxuYfwKT/vlhNyxkgkqw9dDDX+NSNzd8GPC+C+vR3PsZFQfJNxtIuqpukIjmDgz6pX0eUuPyB+h49lhH6PktM4grTP0TUcGcOAiOpy5Y+UKc0rVusu0Lk5u+CIJB4QfjWy24CBjNZe4a3z0a7pD4sYAqH9CciNUGXF2cuvrfyc1l8mJsX+2LFQ588yyzKVqDIlHW/z/r3sDkHUFPK6RmfXuij2TYlh9OUs+bqvAyFNn7a5AazkyR04U5CzctHlB8YmKI2gUJVRJlNSn9lmS3/DIsSy0dH4gvKZ1g8EWu2ts3/TIE2WiU57SRzO3BTG0s8++Nlpqntl1fjdHpQdegMzPzXmx4GrAve5NK1MfK/fFJhhNHVsinpJmH6sTOXAwG5VBMvQaScMHSu/X3aBiq6eqVlk9P7zlGU/7j82pnllHo9Riwnr1XnqSs5fIO3tlBxR19n3nb6VhE=
 sudo: required
-
 addons:
   apt:
     packages:
-      - libcurl4-openssl-dev
-      - libelf-dev
-      - libdw-dev
-      - cmake
-
-after_success:
-  bash <(curl -s https://codecov.io/bash)
+    - libcurl4-openssl-dev
+    - libelf-dev
+    - libdw-dev
+    - cmake
+after_success: bash <(curl -s https://codecov.io/bash)
