@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/nairraghav/ron-cipher.svg?branch=master)](https://travis-ci.org/nairraghav/ron-cipher)
 [![codecov.io](http://codecov.io/github/nairraghav/ron-cipher/coverage.svg?branch=master)](http://codecov.io/github/nairraghav/code-cov?branch=master)
 
-A CLI tool that implements the various ciphers
+A CLI tool that implements various ciphers, including the ability to encrypt and decrypt
 
 ## Supported Ciphers
 * Caeser
