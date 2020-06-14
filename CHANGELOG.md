@@ -1,3 +1,6 @@
+# Version 1.0.3
+* Fixing badge HTTPS vs HTTP
+
 # Version 1.0.2
 * Adding pypi badge
 
