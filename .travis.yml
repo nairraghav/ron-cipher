@@ -6,6 +6,7 @@ install:
 script:
 - make flake
 - make test
+- make build
 deploy:
   provider: pypi
   user: __token__
