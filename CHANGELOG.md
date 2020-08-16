@@ -1,3 +1,6 @@
+# Version 1.0.4
+* Fixing CI change
+
 # Version 1.0.3
 * Fixing badge HTTPS vs HTTP
 
